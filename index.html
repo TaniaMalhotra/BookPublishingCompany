@@ -129,11 +129,37 @@
 
     <section
       class="hero-wrap"
-      style="background-image: url('images/bg_1.jpg')"
       data-stellar-background-ratio="0.5"
     >
       <div class="overlay"></div>
-      <div class="container">
+      
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url('images/carousel/1.jpeg');">
+            <!-- <img src="images/carousel/1.jpeg" alt="Los Angeles" /> -->
+          </div>
+          <div class="carousel-item" style="background-image: url('images/carousel/2.jpeg');">
+            <!-- <img src="images/carousel/2.jpeg"  alt="Chicago" /> -->
+          </div>
+          <div class="carousel-item" style="background-image: url('images/carousel/3.jpeg');">
+            <!-- <img src="images/carousel/3.jpeg" alt="New York" /> -->
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <!-- <div class="container" style="z-index: 100;">
         <div class="row no-gutters slider-text align-items-center">
           <div class="col-md-8 ftco-animate d-flex align-items-end">
             <div class="text w-100">
@@ -142,11 +168,10 @@
                 Publish your book at the loweest prices bla bla bla bla bla bla
                 bla bla bla
               </p>
-              <!-- <p><a href="#" class="btn btn-primary py-3 px-4">View All Books</a> <a href="#" class="btn btn-white py-3 px-4">Explore Now</a></p> -->
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="ftco-section ftco-no-pt mt-5 mt-md-0">
