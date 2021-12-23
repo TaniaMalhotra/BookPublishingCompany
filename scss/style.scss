@@ -92,7 +92,10 @@ h1, h2, h3, h4, h5,
 
 
 .ftco-navbar-light {
-	background: transparent !important;
+	// background: transparent !important;
+	
+	background-color:  #33383b;
+	
 	z-index: 3;
 	padding: 0;
 	border-top: 1px solid rgba(0,0,0,.05);
@@ -108,6 +111,52 @@ h1, h2, h3, h4, h5,
 			padding-bottom: 10px;
 		}
 		> .nav-item {
+			> .nav-link1 {
+				
+				padding-top: 1.5rem;
+				padding-bottom: 1.5rem;
+				padding-left: 20px;
+				padding-right: 20px;
+				font-weight: 500;
+				color: #ffffff;
+
+				
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				position: relative;
+				font-family: $font-secondary;
+				&:before{
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					content: '';
+			    display: block;
+			    width: 0;
+			    height: 2px;
+			    background: $primary;
+			    @include transition(.3s);
+				}
+				&:hover {
+					color: $primary;
+					&:before{
+				    width: 100%;
+					}
+				}
+				opacity: 1!important;
+				@include media-breakpoint-down(md){
+					padding-left: 0;
+					padding-right: 0;
+					padding-top: .7rem;
+					padding-bottom: .7rem;
+					color: rgba(255,255,255,.7);
+					&:hover{
+						color: $white;
+					}
+				}
+				@include media-breakpoint-down(sm){
+					border-bottom: 1px solid rgba(255,255,255,.2);
+				}
+			}
 			> .nav-link {
 				font-size: 13px;
 				padding-top: 1.5rem;
@@ -115,7 +164,9 @@ h1, h2, h3, h4, h5,
 				padding-left: 20px;
 				padding-right: 20px;
 				font-weight: 500;
-				color: $black;
+				color: #ffffff;
+
+				
 				text-transform: uppercase;
 				letter-spacing: 2px;
 				position: relative;
@@ -2083,7 +2134,7 @@ footer{
 }
 
 .footer-distributed .footer-center p a{
-	color:  #e0ac1c;
+	color:  #ffffff;
 	text-decoration: none;;
 }
 
@@ -2151,3 +2202,17 @@ footer{
 	}
 
 }
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+
+  .logo-font{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+  }
+  .logo-font1{
+	color:  #ffffff;
+	font: normal 46px 'Cookie', cursive;
+  }
